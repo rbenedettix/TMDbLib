@@ -16,9 +16,6 @@ namespace TMDbLib.Objects.General
         [JsonProperty("iso_3166_1")]
         public string Iso_3166_1 { get; set; }
 
-        [JsonProperty("name")]
-        public string Name { get; set; }
-
         [JsonProperty("data")]
         public TranslationData Data { get; set; }
     }
