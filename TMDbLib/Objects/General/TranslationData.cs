@@ -7,13 +7,8 @@ namespace TMDbLib.Objects.General
         [JsonProperty("name")]
         public string Name { get; set; }
 
-        // Private hack to ensure two properties (name, title) are deserialized into Name.
-        // Tv Shows and Movies will use different names for their translation data.
         [JsonProperty("title")]
-        private string Title
-        {
-            set => Name = value;
-        }
+        public string Title { get; set; }
 
         [JsonProperty("overview")]
         public string Overview { get; set; }
