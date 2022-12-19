@@ -13,6 +13,7 @@ namespace TMDbLib.Objects.General
         private string Title
         {
             set => Name = value;
+            get => Name;
         }
 
         [JsonProperty("overview")]
